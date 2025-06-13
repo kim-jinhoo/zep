@@ -14,7 +14,7 @@ App.onJoinPlayer.Add(function(player){
 // 플레이어가 모두 입장한 뒤에 한번 호출
 App.onStart.Add(function(){
   // App에서 원하는 플레이어 속성값을 부여할 수 있다.
-   App.showCenterLabel("oninit player");
+   App.showCenterLabel("oninit");
 });
 
 // 플레이어가 떠날 때
@@ -32,4 +32,5 @@ App.onUpdate.Add(function(){
 App.onDestroy.Add(function(){
    // 이미 모든 플레이어가 App에서 나간 상태
    // App을 나머지를 정리한다.
+    App.showCenterLabel("oninit player");
 })
